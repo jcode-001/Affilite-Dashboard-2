@@ -2,7 +2,7 @@ const toggleBar = document.querySelector(".toggle");
 const closeBtn = document.querySelector(".close");
 const menu = document.querySelector(".section-1");
 const dropdownBox = document.querySelector(".drop-down");
-const dropdownBtn = document.querySelector(".d-symbol");
+const dropdownBtn = document.querySelector(".profile");
 
 function openMenu() {
     menu.classList.add("active");
