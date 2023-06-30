@@ -170,8 +170,8 @@ section{
     position: relative;
 }
 .d-symbol{
-    transform: rotate(90deg);
-    font-size: 20px;
+    /* transform: rotate(90deg); */
+    /* font-size: 20px; */
     margin: .5rem;
     cursor: pointer;
     /* display: none; */
@@ -440,6 +440,9 @@ label{
         gap: unset;
         background-color: transparent;
         padding: unset;
-        transform: translateX(15px);
+        transform: translateX(10px);
+    }
+    .d-symbol{
+        margin: 5px;
     }
 }
