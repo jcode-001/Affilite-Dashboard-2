@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- Section one -->
+        <section class="menu-nav section-1">
+            <!-- Header section -->
+            <header class="header-1">
+                <div class="brand">
+                    <img src="img/logo2.png" alt="Affilite Logo">
+                    <h1>Affilite</h1>
+                </div>
+                <div class="close">&times;</div>
+            </header>
+
+            <!-- Navigation section -->
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a class="current" href="#"><i class="fa-solid fa-box fa-bounce"></i>Affiliate Dashboard</a>
+                        </li>
+                        <li><a href="#"><i class="fa-solid fa-shop fa-bounce"></i>Marketer</a></li>
+                        <li><a href="#"><i class="fa-solid fa-star fa-bounce"></i>Vendor</a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping fa-bounce"></i>Shop</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chart-simple fa-bounce"></i>Product Stats</a></li>
+                        <li><a href="#"><i class="fa-solid fa-users fa-bounce"></i>Join Community</a></li>
+                    </ul>
+                </nav>
+                <div class="vendor">
+                    <a href="#">
+                        <button class="btn btn-1">Become Vendor</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section two -->
+        <section class="dashboard section-2">
+            <header class="header-2">
+                <div class="toggle">&#9776;</div>
+                <div class="head-1 sub-1">
+                    <h1><span class="greeting">Good Afternoon</span>, <span class="user">Gift</span>&#128578;</h1>
+                    <p class="peptalk">You’re one step from making your next Sales… Send some traffic now</p>
+                </div>
+                <div class="head-2">
+                    <div class="notify">
+                        <img src="img/notification-bell.svg" alt="notification-bell">
+                        <div class="notify-count">0</div>
+                    </div>
+                    <div class="profile">
+                        <div class="sect initial">G</div>
+                        <div class="sect name">
+                            <h3>Gift Jackson</h3>
+                            <p>Affiliate</p>
+                        </div>
+                        <div class="sect d-symbol">&#10095;</div>
+
+                        <!-- profile dropdown -->
+                        <div class="drop-down">
+                            <div class="drop-down-content">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#"><i class="fa-regular fa-user fa-bounce"></i> Profile</a></li>
+                                        <li><a href="#"><i class="fa-regular fa-circle-info fa-bounce"></i> Help
+                                                Center</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-right-from-bracket fa-bounce"></i>
+                                                Logout</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="head-1 sub-2">
+                <h1><span class="greeting">Good Afternoon</span>, <span class="user">Gift</span>&#128578;</h1>
+                <p class="peptalk">You’re one step from making your next Sales… Send some traffic now</p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="wrapper">
+                <div class="wrap-1">
+                    <div class="stat">
+                        <div class="img">
+                            <img src="img/total-earnings.svg" alt="Medal">
+                            <label>Total Earnings</label>
+                        </div>
+                        <div class="content">
+                            <div class="digit cash"><span class="currency">&dollar;</span><span class="cash">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sales">
+                        <div class="img">
+                            <img src="img/number-sales.svg" alt="Medal">
+                            <label>Number Sales</label>
+                        </div>
+                        <div class="content">
+                            <div class="digit sales-count">0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ranking -->
+                <div class="wrap-2">
+                    <div class="img">
+                        <img src="img/Junior-badge.svg" alt="Medal">
+                        <div class="sect">
+                            <p>Affiliate Rank</p>
+                            <h1>Junior</h1>
+                        </div>
+                    </div>
+                    <div class="next-payout">
+                        <p>Next Payout</p>
+                        <div class="digit payout">0</div>
+                    </div>
+                    <div class="time-payout"></div>
+                    <button class="btn-2">Request Payout</button>
+                </div>
+            </div>
+
+            <!-- Transaction section -->
+            <header class="header-3">
+                <h1>Recent Transactions</h1>
+                <a href="#">View All</a>
+            </header>
+            <div class="transaction-list"></div>
+        </section>
+    </div>
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+    <script>
+        let time = document.querySelector(".time-payout");
+
+        time.textContent = Date();
+    </script>
+</body>
+
+</html>
