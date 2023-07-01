@@ -1,7 +1,8 @@
 const toggleBar = document.querySelector(".toggle");
 const closeBtn = document.querySelector(".close");
 const menu = document.querySelector(".section-1");
-const dropdownBtn = document.querySelectorAll(".profile");
+const dropdownBtn = document.querySelector(".profile");
+const dropdownBox = document.querySelector(".drop-down");
 
 function openMenu() {
   menu.classList.add("active");
@@ -16,17 +17,9 @@ document.onclick = function (e) {
 }
 
 // Profile
-// Attach click event listeners to each toggle button
-dropdownBtn.forEach(function(button) {
-  button.addEventListener('click', function() {
-    // Get the corresponding dropdown based on the button's dataset value
-    var dropdownId = button.dataset.dropdown;
-    var dropdown = document.querySelector('.dropdown' + dropdownId);
-
-    // Toggle the display of the dropdown
-    dropdown.classList.toggle('active');
-  });
-});
+dropdownBtn.addEventListener("click", ()=>{
+  dropdownBox.classList.toggle("active");
+})
 
 
 

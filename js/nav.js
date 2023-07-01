@@ -5,7 +5,7 @@ const productLink = document.querySelector(".product-link");
 const dashboard = document.querySelector(".dashboard");
 const market = document.querySelector(".market");
 const vendor = document.querySelector(".vendor");
-const product = document.querySelector(".product-stat");
+const product = document.querySelector(".product");
 
 function showMarket(){
     market.classList.add("active");
