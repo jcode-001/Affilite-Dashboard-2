@@ -10,6 +10,7 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Global */
 body{
     background-color: #fefefe;
 }
@@ -33,6 +34,8 @@ body{
 .main-container{
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
 }
 section{
     height: auto;
@@ -47,10 +50,20 @@ section{
 .section-2{
     width: 80%;
     background-color:#f5f5f5;
-    padding: 2rem;
+    /* padding: 2rem; */
+    position: relative;
 }
+.sub-section{
+    min-height: 100vh;
+    height: auto;
+    /* border: 1px solid red; */
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+/* End of Global */
 
-/* Navigation section */
+
+/* section-1 */
 .header-1{
     height: 80px;
     display: flex;
@@ -136,7 +149,11 @@ section{
 .btn-1:hover{
     filter: brightness(90%);
 }
+/* End of Section-1 */
 
+
+
+/* Beginning of section-2 */
 /* Dashboard Section */
 .header-2{
     height: 100px;
@@ -380,6 +397,34 @@ label{
     color: #444;
 }
 
+.dashboard,.market, .vendor, .product-stat{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+.dashboard.varnish{
+    display: none;
+}
+.dashboard.active,.market.active, .vendor.active, .product-stat.active{
+    display: block;
+}
+.market, .vendor, .product-stat{
+    display: none;
+}
+/* marketplace */
+.market{
+    /* background-color: red; */
+}
+/* vendor */
+.vendor{
+    background-color: green;
+}
+/* product */
+.product-stat{
+    background-color: yellow;
+}
+
 /* Media Query */
 @media screen and (max-width:786px) {
     .section-1{
@@ -395,7 +440,7 @@ label{
     .section-1.reverse{
         left: -100%;
     }
-    .section-2{
+    .section-2,.section-3 {
         width: 100%;
     }
     .sub-1, .name{
@@ -410,7 +455,7 @@ label{
     .header-2{
         height: 80px;
     }
-    .section-2{
+    .sub-section{
         padding: 0 1rem;
     }
     .wrapper{
@@ -419,11 +464,6 @@ label{
     .wrap-1, .wrap-2{
         width: 100%;
     }
-    /* .head-2{
-        gap: unset;
-        width: 50%;
-        justify-content: space-between;
-    } */
     .wrap-2{
         height: 400px;
     }

@@ -11,36 +11,39 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="market.css">
 </head>
 
 <body>
     <div class="main-container">
 
         <!-- Section one -->
-        <section class="menu-nav section-1">
+        <section class="section-1">
             <!-- Header section -->
             <header class="header-1">
                 <div class="brand">
                     <img src="img/logo2.png" alt="Affilite Logo">
                     <h1>Affilite</h1>
                 </div>
-                <div class="close">&times;</div>
+                <div class="close" id="close">&times;</div>
             </header>
 
             <!-- Navigation section -->
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a class="current" href="#"><i class="fa-solid fa-box fa-bounce"></i>Affiliate Dashboard</a>
+                        <li><a class="current dash-link" href="#"><i class="fa-solid fa-box fa-bounce"></i>Affiliate
+                                Dashboard</a>
                         </li>
-                        <li><a href="#"><i class="fa-solid fa-shop fa-bounce"></i>Marketer</a></li>
-                        <li><a href="#"><i class="fa-solid fa-star fa-bounce"></i>Vendor</a></li>
-                        <li><a href="#"><i class="fa-solid fa-cart-shopping fa-bounce"></i>Shop</a></li>
-                        <li><a href="#"><i class="fa-solid fa-chart-simple fa-bounce"></i>Product Stats</a></li>
+                        <li><a class="market-link" href="#"><i class="fa-solid fa-shop fa-bounce"></i>Market Place</a>
+                        </li>
+                        <li><a class="vendor-link" href="#"><i class="fa-solid fa-star fa-bounce"></i>Vendor</a></li>
+                        <li><a class="product-link" href="#"><i class="fa-solid fa-chart-simple fa-bounce"></i>Product
+                                Stats</a></li>
                         <li><a href="#"><i class="fa-solid fa-users fa-bounce"></i>Join Community</a></li>
                     </ul>
                 </nav>
-                <div class="vendor">
+                <div class="vendor-btn">
                     <a href="#">
                         <button class="btn btn-1">Become Vendor</button>
                     </a>
@@ -49,104 +52,218 @@
         </section>
 
         <!-- Section two -->
-        <section class="dashboard section-2">
-            <header class="header-2">
-                <div class="toggle">&#9776;</div>
-                <div class="head-1 sub-1">
+        <section class="section-2">
+            <div class="sub-section dashboard">
+                <header class="header-2">
+                    <div class="toggle" id="toggle">&#9776;</div>
+                    <div class="head-1 sub-1">
+                        <h1><span class="greeting">Good Afternoon</span>, <span class="user">Gift</span>&#128578;</h1>
+                        <p class="peptalk">You’re one step from making your next Sales… Send some traffic now</p>
+                    </div>
+                    <div class="head-2">
+                        <div class="notify">
+                            <img src="img/notification-bell.svg" alt="notification-bell">
+                            <div class="notify-count">0</div>
+                        </div>
+                        <div class="profile">
+                            <div class="sect initial">G</div>
+                            <div class="sect name">
+                                <h3>Gift Jackson</h3>
+                                <p>Affiliate</p>
+                            </div>
+                            <div class="sect d-symbol">
+                                <span><i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+
+                            <!-- profile dropdown -->
+                            <div class="drop-down">
+                                <div class="drop-down-content">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fa-regular fa-user fa-bounce"></i> Profile</a>
+                                            </li>
+                                            <li><a href="#"><i class="fa-solid fa-circle-info fa-bounce"></i> Help
+                                                    Center</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-right-from-bracket fa-bounce"></i>
+                                                    Logout</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="head-1 sub-2">
                     <h1><span class="greeting">Good Afternoon</span>, <span class="user">Gift</span>&#128578;</h1>
                     <p class="peptalk">You’re one step from making your next Sales… Send some traffic now</p>
                 </div>
-                <div class="head-2">
-                    <div class="notify">
-                        <img src="img/notification-bell.svg" alt="notification-bell">
-                        <div class="notify-count">0</div>
-                    </div>
-                    <div class="profile">
-                        <div class="sect initial">G</div>
-                        <div class="sect name">
-                            <h3>Gift Jackson</h3>
-                            <p>Affiliate</p>
-                        </div>
-                        <div class="sect d-symbol">
-                            <span><i class="fa-solid fa-caret-down"></i></span>
-                        </div>
 
-                        <!-- profile dropdown -->
-                        <div class="drop-down">
-                            <div class="drop-down-content">
-                                <nav>
-                                    <ul>
-                                        <li><a href="#"><i class="fa-regular fa-user fa-bounce"></i> Profile</a></li>
-                                        <li><a href="#"><i class="fa-solid fa-circle-info fa-bounce"></i> Help
-                                                Center</a></li>
-                                        <li><a href="#"><i class="fa-solid fa-right-from-bracket fa-bounce"></i>
-                                                Logout</a></li>
-                                    </ul>
-                                </nav>
+                <!-- Stats Section -->
+                <div class="wrapper">
+                    <div class="wrap-1">
+                        <div class="stat">
+                            <div class="img">
+                                <img src="img/total-earnings.svg" alt="Medal">
+                                <label>Total Earnings</label>
+                            </div>
+                            <div class="content">
+                                <div class="digit cash"><span class="currency">&dollar;</span><span
+                                        class="cash">725.05</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sales">
+                            <div class="img">
+                                <img src="img/number-sales.svg" alt="Medal">
+                                <label>Number Sales</label>
+                            </div>
+                            <div class="content">
+                                <div class="digit sales-count">7</div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </header>
 
-            <div class="head-1 sub-2">
-                <h1><span class="greeting">Good Afternoon</span>, <span class="user">Gift</span>&#128578;</h1>
-                <p class="peptalk">You’re one step from making your next Sales… Send some traffic now</p>
-            </div>
-
-            <!-- Stats Section -->
-            <div class="wrapper">
-                <div class="wrap-1">
-                    <div class="stat">
+                    <!-- Ranking -->
+                    <div class="wrap-2">
                         <div class="img">
-                            <img src="img/total-earnings.svg" alt="Medal">
-                            <label>Total Earnings</label>
+                            <img src="img/Junior-badge.svg" alt="Medal">
+                            <div class="sect">
+                                <p>Affiliate Rank</p>
+                                <h1>Junior</h1>
+                            </div>
                         </div>
-                        <div class="content">
-                            <div class="digit cash"><span class="currency">&dollar;</span><span class="cash">0</span>
+                        <div class="next-payout">
+                            <p>Next Payout</p>
+                            <div class="digit payout">0</div>
+                        </div>
+                        <div class="time-payout"></div>
+                        <button class="btn-2">Request Payout</button>
+                    </div>
+                </div>
+
+                <!-- Transaction section -->
+                <header class="header-3">
+                    <h1>Recent Transactions</h1>
+                    <a href="#">View All</a>
+                </header>
+                <div class="transaction-list"></div>
+            </div>
+            <!-- End of dashboard -->
+
+
+            <!-- Marketplace -->
+            <div class="sub-section market">
+                <header class="header-2">
+                    <div class="toggle" id="toggle">&#9776;</div>
+                    <div class="head-1 sub-1">
+                        <h1>Marketplace</h1>
+                        <p>Choose hot-selling products to promote. Just pick.</p>
+                    </div>
+                    <div class="head-2">
+                        <div class="notify">
+                            <img src="img/notification-bell.svg" alt="notification-bell">
+                            <div class="notify-count">0</div>
+                        </div>
+                        <div class="profile">
+                            <div class="sect initial">G</div>
+                            <div class="sect name">
+                                <h3>Gift Jackson</h3>
+                                <p>Affiliate</p>
+                            </div>
+                            <div class="sect d-symbol">
+                                <span><i class="fa-solid fa-caret-down"></i></span>
+                            </div>
+
+                            <!-- profile dropdown -->
+                            <div class="drop-down">
+                                <div class="drop-down-content">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#"><i class="fa-regular fa-user fa-bounce"></i> Profile</a>
+                                            </li>
+                                            <li><a href="#"><i class="fa-solid fa-circle-info fa-bounce"></i> Help
+                                                    Center</a></li>
+                                            <li><a href="#"><i class="fa-solid fa-right-from-bracket fa-bounce"></i>
+                                                    Logout</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sales">
-                        <div class="img">
-                            <img src="img/number-sales.svg" alt="Medal">
-                            <label>Number Sales</label>
-                        </div>
-                        <div class="content">
-                            <div class="digit sales-count">0</div>
-                        </div>
-                    </div>
+                </header>
+                <div class="head-1 sub-2">
+                    <h1>Marketplace</h1>
+                    <p>Choose hot-selling products to promote. Just pick.</p>
+                </div>
+                <div class="search-box">
+                    <form action="#" method="#">
+                        <input type="text" id="srch" placeholder="Search for a product..." />
+                        <button class="search-btn"><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
 
-                <!-- Ranking -->
-                <div class="wrap-2">
-                    <div class="img">
-                        <img src="img/Junior-badge.svg" alt="Medal">
-                        <div class="sect">
-                            <p>Affiliate Rank</p>
-                            <h1>Junior</h1>
-                        </div>
-                    </div>
-                    <div class="next-payout">
-                        <p>Next Payout</p>
-                        <div class="digit payout">0</div>
-                    </div>
-                    <div class="time-payout"></div>
-                    <button class="btn-2">Request Payout</button>
+                <!-- market product table -->
+                <div class="product-table-container table-container">
+                    <table id="myTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Products</th>
+                                <th style="text-align: center;" scope="col">Product Type</th>
+                                <th style="text-align: center;" scope="col">Price ($)</th>
+                                <th style="text-align: center;" scope="col">Comm%</th>
+                                <th style="text-align: center;" scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Data 1</td>
+                                <td style="text-align: center;">Data 2</td>
+                                <td style="text-align: center;">Data 3</td>
+                                <td style="text-align: center;">Data 4</td>
+                                <td style="text-align: center;"><button class="promote-btn">Promote</button></td>
+                            </tr>
+                            <tr>
+                                <td>Data 5</td>
+                                <td style="text-align: center;">Data 6</td>
+                                <td style="text-align: center;">Data 7</td>
+                                <td style="text-align: center;">Data 8</td>
+                                <td style="text-align: center;"><button class="promote-btn">Promote</button></td>
+                            </tr>
+                            <tr>
+                                <td>Data 9</td>
+                                <td style="text-align: center;">Data 10</td>
+                                <td style="text-align: center;">Data 11</td>
+                                <td style="text-align: center;">Data 12</td>
+                                <td style="text-align: center;"><button class="promote-btn">Promote</button></td>
+                            </tr>
+                            <tr>
+                                <td>Data 13</td>
+                                <td style="text-align: center;">Data 14</td>
+                                <td style="text-align: center;">Data 15</td>
+                                <td style="text-align: center;">Data 16</td>
+                                <td style="text-align: center;"><button class="promote-btn">Promote</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+
             </div>
+            <!-- End of Marketplace -->
 
-            <!-- Transaction section -->
-            <header class="header-3">
-                <h1>Recent Transactions</h1>
-                <a href="#">View All</a>
-            </header>
-            <div class="transaction-list"></div>
+
+            <!-- Vendor -->
+            <div class="sub-section vendor"></div>
+            <!-- Product Stats -->
+            <div class="sub-section product-stat"></div>
         </section>
     </div>
 
     <!-- Javascript -->
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/market.js"></script>
+    <script src="js/nav.js"></script>
     <script>
         let time = document.querySelector(".time-payout");
 
