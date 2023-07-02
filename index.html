@@ -12,6 +12,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/market.css">
+    <link rel="stylesheet" href="css/product.css">
 </head>
 
 <body>
@@ -211,11 +212,42 @@
                 <!-- End of marketplace -->
 
                 <!-- Vendor -->
-                <div class="vendor content"></div>
+                <div class="vendor content">
+                    <div class="sub-title">
+                        <h1 class="title">Vendor</h1>
+                    </div>
+                    <div class="page-404">
+                        <h1>404</h1>
+                        <p>Nothing For You</p>
+                        <h2>I Still Dey Cook! &#128527;</h2>
+                    </div>
+                </div>
                 <!-- End of vendor -->
 
                 <!-- Product Stats -->
-                <div class="product content"></div>
+                <div class="product content">
+                    <div class="sub-title">
+                        <h1 class="title">Product Statistics</h1>
+                    </div>
+                    <!-- Charts -->
+                    <div class="graphbox">
+                        <div class="box">
+                            <div class="box-title">My Products</div>
+                            <div class="chart">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-title">Promoted Products</div>
+                            <div class="chart">
+                                <canvas id="my-Chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-404">
+                        <h2>Still Cooking Boss! &#128527;</h2>
+                    </div>
+                </div>
                 <!-- End of product stats -->
             </div>
         </section>
@@ -227,6 +259,103 @@
     <script src="js/app.js"></script>
     <script src="js/market.js"></script>
     <script src="js/nav.js"></script>
+    <script src="chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <!-- Chart for my product -->
+    <script>
+        const data = {
+  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  datasets: [{
+      label: 'Weekly Sales',
+      data: [18, 12, 6, 9, 12, 3, 9],
+      backgroundColor: [
+          'rgba(255, 26, 104, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          'rgba(0, 0, 0, 0.2)'
+      ],
+      borderColor: [
+          'rgba(255, 26, 104, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          'rgba(0, 0, 0, .1)'
+      ],
+      borderWidth: 1
+  }]
+};
+
+// config 
+const config = {
+  type: 'doughnut',
+  data,
+  options: {
+      scales: {
+          y: {
+              beginAtZero: true
+          }
+      }
+  }
+};
+
+// render init block
+const myChart = new Chart(
+  document.getElementById('myChart'),
+  config
+);
+
+// Chart for promoted product
+const dataa = {
+  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+  datasets: [{
+      label: ' Promoted Sales',
+      data: [18, 12, 6, 9, 12, 3, 9],
+      backgroundColor: [
+          'rgba(255, 26, 104, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          'rgba(0, 0, 0, 0.2)'
+      ],
+      borderColor: [
+          'rgba(255, 26, 104, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          'rgba(0, 0, 0, .1)'
+      ],
+      borderWidth: 1
+  }]
+};
+
+// config 
+const configg = {
+  type: 'bar',
+  dataa,
+  options: {
+      scales: {
+          y: {
+              beginAtZero: true
+          }
+      }
+  }
+};
+
+// render init block
+const my_Chart = new Chart(
+  document.getElementById('my-Chart'),
+  configg
+);
+    </script>
     <script>
         let time = document.querySelector(".time-payout");
 

@@ -6,6 +6,7 @@
     padding: 10px;
     border-radius: 30px;
     overflow: hidden;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
 }
 
 form {
@@ -43,7 +44,24 @@ input {
     margin-top: 30px;
     overflow-x: scroll;
     background-color: #fefefe;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: .5rem;
+    min-height: 200px;
+    height: auto;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    position: relative;
+}
+.table-container::after{
+    content: "No Product Yet";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .table-container::-webkit-scrollbar {
@@ -98,8 +116,5 @@ tr {
 
     table {
         width: 750px;
-    }
-    .table-container{
-        border-radius: 1rem 0 0 0;
     }
 }
