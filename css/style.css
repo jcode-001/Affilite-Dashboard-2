@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --color-primary: #05ce81;
+    --color-secondary: #fefefe;
+    --color-background: #f6f6f9;
+    --color-text: #444;
+    --border-radius: 1.5rem;
+    --box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+}
+
+body {
+    background-color: var(--color-background);
+    height: auto;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: end;
+}
+
+.section1 {
+    width: 20%;
+    height: 100vh;
+    background-color: var(--color-secondary);
+    border-radius: 0 20px 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, .05);
+    z-index: 9;
+}
+
+.section1::-webkit-scrollbar {
+    display: none;
+}
+
+.section2 {
+    width: 80%;
+    height: 100vh;
+    position: relative;
+}
+
+.section1 .top {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--color-background);
+}
+
+.section1 .top .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section1 .top .brand .logo {
+    height: 50px;
+    width: 50px;
+    background-color: var(--color-background);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close-btn {
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+.close-btn span {
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.close-btn span:hover {
+    background-color: var(--color-background);
+    border-radius: 50%;
+}
+
+/* Side bar */
+.sidebar ul {
+    list-style: none;
+}
+
+
+.sidebar ul li a {
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.sidebar ul li a span {
+    color: var(--color-primary);
+}
+
+.sidebar ul li a h3 {
+    font-size: 15px;
+}
+
+.sidebar ul li a:hover,
+a.current {
+    background-color: var(--color-background);
+    transition: .2s;
+    border-radius: 5px;
+}
+
+.sidebar ul li a.current h3 {
+    color: var(--color-primary);
+}
+
+.page-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: .2s;
+}
+
+.sidebar ul li a:hover .page-link {
+    padding-left: 10px;
+}
+
+
+/* End Of Section 1 */
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.menu-btn {
+    visibility: hidden;
+}
+
+.menu-btn span {
+    font-size: 30px;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+    background-color: #d6f5e9;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.notification-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.notification span {
+    color: var(--color-secondary);
+    /* font-size: 20px; */
+}
+
+.notification-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 13px;
+    background-color: crimson;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.user-profile {
+    text-align: left;
+}
+
+/* Main Section */
+main {
+    width: 90%;
+    margin: 0 auto 2rem;
+    height: auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+.edit {
+    border-left: 5px solid var(--color-primary);
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+main>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.market,
+.withdraw,
+.team,
+.contest,
+.influence,
+.plug {
+    display: none;
+}
+
+/* Dashboard */
+.boxes {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+.boxes .box {
+    box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 150px;
+}
+
+.boxes .box h3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.boxes .box strong {
+    font-size: 2em;
+}
+
+.boxes .box span {
+    color: var(--color-primary);
+}
+
+.transaction-container {
+    margin-top: 40px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head a {
+    color: var(--color-primary);
+}
+
+#transactions {
+    height: auto;
+    min-height: 200px;
+    background-color: var(--color-secondary);
+    border-radius: 1rem;
+    margin-top: 10px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+#transactions::before {
+    content: "No Transactions Yet!";
+}
+
+/* End Of Dashboard */
+
+/* Marketplace */
+
+.search-container{
+    margin: 20px 0;
+    height: 50px;
+    width: 100%;
+    background-color: var(--color-secondary);
+    box-shadow: var(--box-shadow);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px 10px 15px;
+}
+.srch{
+    width: 70%;
+    font-size: 17px;
+    text-transform: initial;
+    border: 0;
+}
+.srch-btn{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.srch-btn:active{
+    filter: brightness(90%);
+}
+.srch-btn span{
+    font-size: 17px;
+    color: var(--color-secondary);
+}
+
+
+/* Page 404 */
+.page-404{
+    height: 300px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 40px;
+    border: 3px dashed rgba(0, 0, 0, .4);
+    border-radius: 10px;
+}
+.page-404 h1{
+    color: rgba(0, 0, 0, .4);
+    font-size: 100px;
+}
+.page-404 h3{
+    color: rgba(0, 0, 0, .4);
+}
+.page-404 p{
+    color: rgba(0, 0, 0, .5);
+}
+
+/* Media Queries */
+
+@media screen and (max-width:900px) {
+
+    .section1 {
+        width: 10%;
+    }
+
+    .section2 {
+        width: 90%;
+    }
+
+    .brand h1,
+    .page-link h3 {
+        display: none;
+    }
+
+    .sidebar ul li a:hover .page-link {
+        padding-left: unset;
+    }
+
+    .sidebar ul li a {
+        padding: 1rem 0;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .section1 {
+        width: 0;
+        box-shadow: 0 2px 25px rgba(0, 0, 0, .05);
+        transition: .2s;
+        /* display: none; */
+    }
+
+    .section1.active {
+        width: 70%;
+    }
+
+    .section2 {
+        width: 100%;
+    }
+
+    .boxes .box strong {
+        font-size: 25px;
+    }
+
+    header {
+        padding: 1rem 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-background);
+        transition: all .2s ease;
+        z-index: 4;
+    }
+
+    header.scroll {
+        height: 70px;
+        background-color: var(--color-secondary);
+        box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+    }
+
+    .notification {
+        height: 45px;
+        width: 45px;
+    }
+
+    main {
+        margin-top: 80px;
+    }
+
+    .menu-btn {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .close-btn {
+        visibility: visible;
+    }
+
+    .sidebar ul li a {
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .brand h1,
+    .page-link h3 {
+        display: block;
+    }
+
+    .sidebar ul li a:hover .page-link {
+        padding-left: 10px;
+    }
+
+    .edit {
+        font-size: 20px;
+    }
+
+    header .right {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:486px) {
+    .boxes {
+        grid-template-columns: 1fr;
+    }
+
+}

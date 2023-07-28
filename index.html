@@ -4,175 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/market.css">
-    <link rel="stylesheet" href="css/product.css">
+    <title>Affilite DashBoard</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+    <!-- SYTLESHEET -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/marketplace.css">
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="main-container">
-        <!-- Section-1 Navigation -->
-        <section class="section-1">
-            <!-- Header section -->
-            <header class="header-1">
+    <div class="container">
+        <section class="section1">
+            <div class="top">
                 <div class="brand">
-                    <img src="img/logo2.png" alt="Affilite Logo">
+                    <div class="logo">
+                        <img src="img/logo2.png" alt="Affilite_logo" width="100%">
+                    </div>
                     <h1>Affilite</h1>
                 </div>
-                <div class="close" id="close">&times;</div>
-            </header>
+                <div class="close-btn"><span class="material-symbols-outlined">close</span></div>
+            </div>
 
-            <!-- Navigation Links -->
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a class="current dash-link" href="#"><i class="fa-solid fa-box fa-bounce"></i>Affiliate
-                                Dashboard</a>
-                        </li>
-                        <li><a class="market-link" href="#"><i class="fa-solid fa-shop fa-bounce"></i>Market Place</a>
-                        </li>
-                        <li><a class="vendor-link" href="#"><i class="fa-solid fa-star fa-bounce"></i>Vendor</a></li>
-                        <li><a class="product-link" href="#"><i class="fa-solid fa-chart-simple fa-bounce"></i>Product
-                                Stats</a></li>
-                        <li><a href="#"><i class="fa-solid fa-users fa-bounce"></i>Join Community</a></li>
-                    </ul>
-                </nav>
-                <div class="vendor-btn">
-                    <a href="#">
-                        <button class="btn btn-1">Become Vendor</button>
-                    </a>
-                </div>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a class="dash-link current" href="#">
+                            <div class="page-link">
+                                <span class="material-symbols-outlined">dashboard</span>
+                                <h3>Dashboard</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="market-link" href="#">
+                            <div class="page-link">
+                                <span class="material-symbols-outlined">storefront</span>
+                                <h3>Marketplace</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="withdraw-link" href="#">
+                            <div class="page-link">
+                                <span class="material-symbols-outlined">payments</span>
+                                <h3>Withdraw</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="team-link" href="#">
+                            <div class="page-link">
+                                <span class="material-symbols-outlined">diversity_3</span>
+                                <h3>Team Cycle</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contest-link" href="#">
+                            <div class="page-link">
+                                <span class="material-symbols-outlined">group_work</span>
+                                <h3>Contest</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="influence-link" href="#">
+                            <div class="page-link">
+                                <span class="material-symbols-outlined">verified_user</span>
+                                <h3>Influencer</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="plug-link" href="#">
+                            <div class="page-link">
+                                <span class="material-symbols-outlined">extension</span>
+                                <h3>Plug-in</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="page-link">
+                                <span class="material-symbols-outlined">logout</span>
+                                <h3>Logout</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
-        <!-- End of Section-1 Navigation -->
+        <!------- END OF SECTION 1 ------->
 
-        <!-- Section-2 -->
-        <section class="section-2">
-            <header class="fixed-header">
-                <div class="toggle" id="toggle">&#9776;</div>
-                <div class="head-1 sub-1 dash-head-1">
-                    <h1><span class="greeting">Good Afternoon</span>, <span class="user">Gift</span>&#128578;</h1>
-                    <p class="peptalk">You’re one step from making your next Sales… Send some traffic now</p>
+
+        <section class="section2">
+            <header>
+                <div class="menu-btn">
+                    <span class="material-symbols-outlined">drag_handle</span>
                 </div>
-                <div class="head-2">
-                    <div class="notify">
-                        <img src="img/notification-bell.svg" alt="notification-bell">
-                        <div class="notify-count">0</div>
-                    </div>
+                <div class="right">
+                    <a class="notification-container" href="#">
+                        <div class="notification">
+                            <span class="material-symbols-outlined">notifications</span>
+                            <span class="notification-count">15</span>
+                        </div>
+                    </a>
+
+                    <!-- end of notification -->
                     <div class="profile">
-                        <div class="sect initial">G</div>
-                        <div class="sect name">
-                            <h3>Gift Jackson</h3>
-                            <p>Affiliate</p>
-                        </div>
-                        <div class="sect d-symbol">
-                            <span><i class="fa-solid fa-caret-down"></i></span>
-                        </div>
-                        <!-- profile dropdown -->
-                        <div class="drop-down">
-                            <div class="drop-down-content">
-                                <nav>
-                                    <ul>
-                                        <li><a href="#"><i class="fa-regular fa-user fa-bounce"></i> Profile</a>
-                                        </li>
-                                        <li><a href="#"><i class="fa-solid fa-circle-info fa-bounce"></i> Help
-                                                Center</a></li>
-                                        <li><a href="#"><i class="fa-solid fa-right-from-bracket fa-bounce"></i>
-                                                Logout</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
+                        <div class="user-profile">
+                            <small class="name">Gift Jackson</small>
+                            <p><b>Affiliate</b></p>
                         </div>
                     </div>
                 </div>
             </header>
-            <div class="head-1 sub-2 dash-head-2">
-                <h1><span class="greeting">Good Afternoon</span>, <span class="user">Gift</span>&#128578;</h1>
-                <p class="peptalk">You’re one step from making your next Sales… Send some traffic now</p>
-            </div>
 
-            <!-- Sub-sections In Section-2 -->
-            <div class="sub-section">
-
-                <!-- Dashboard -->
-                <div class="dashboard content">
-                    <div class="sub-title">
-                        <h1 class="title">Dashboard</h1>
+            
+            <main>
+                <div class="dashboard active">
+                    <div class="title">
+                        <h1><span class="greeting">Good Evening</span>, <span class="first-name">Gift</span></h1>
+                        <small class="quote">The sales should be dropping in already, keep promoting Boss</small>
                     </div>
-                    <div class="wrapper">
-                        <div class="wrap-1">
-                            <div class="stat">
-                                <div class="img">
-                                    <img src="img/total-earnings.svg" alt="Medal">
-                                    <label>Total Earnings</label>
-                                </div>
-                                <div class="value">
-                                    <div class="digit cash"><span class="currency">&dollar;</span><span
-                                            class="cash">0</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sales">
-                                <div class="img">
-                                    <img src="img/number-sales.svg" alt="Medal">
-                                    <label>Number Sales</label>
-                                </div>
-                                <div class="value">
-                                    <div class="digit sales-count">0</div>
-                                </div>
-                            </div>
+                    <div class="boxes">
+                        <div class="box">
+                            <h3><span class="material-symbols-outlined">account_balance_wallet</span> <label>Total Earnings</label></h3>
+                            <strong class="earning">$2550</strong>
                         </div>
-
-                        <!-- Ranking -->
-                        <div class="wrap-2">
-                            <div class="img">
-                                <img src="img/Junior-badge.svg" alt="Medal">
-                                <div class="sect">
-                                    <p>Affiliate Rank</p>
-                                    <h1>Junior</h1>
-                                </div>
-                            </div>
-                            <div class="next-payout">
-                                <p>Next Payout</p>
-                                <div class="digit payout">0</div>
-                            </div>
-                            <div class="time-payout"></div>
-                            <button class="btn-2">Request Payout</button>
+                        <div class="box">
+                            <h3><span class="material-symbols-outlined">point_of_sale</span> <label>Number of Sales</label></h3>
+                            <strong class="earning">7</strong>
+                        </div>
+                        <div class="box">
+                            <h3><span class="material-symbols-outlined">inventory_2</span> <label>My Products</label></h3>
+                            <strong class="earning">4</strong>
+                        </div>
+                        <div class="box">
+                            <h3><span class="material-symbols-outlined">shopping_cart_checkout</span> <label>Promoted Products</label></h3>
+                            <strong class="earning">0</strong>
                         </div>
                     </div>
-
-                    <!-- Transaction -->
-                    <div class="container">
-                        <header class="transction-header">
-                            <h1>Recent Transactions</h1>
-                            <a href="#">View All</a>
-                        </header>
-                        <div class="transaction-container"></div>
+                    <div class="transaction-container">
+                        <div class="head">
+                            <h3>Recent Transactions</h3>
+                            <a href="#">View All &raquo;</a>
+                        </div>
+                        <div id='transactions'></div>
                     </div>
                 </div>
-                <!-- End of dashboard -->
+                <!-- End of Dashboard Section -->
 
-                <!-- Marketplace -->
-                <div class="market content">
-                    <div class="sub-title">
-                        <h1 class="title">Marketplace</h1>
-                    </div>
-                    <div class="search-box">
-                        <form action="#" method="#">
-                            <input type="text" id="srch" placeholder="Search for a product..." />
-                            <button class="search-btn"><i class="fa fa-search"></i></button>
-                        </form>
+
+                <div class="market">
+                    <div class="title">
+                        <h1 class="edit">Marketplace</h1>
                     </div>
 
-                    <!-- market product table -->
-                    <div class="product-table-container table-container">
+                    <div class="search-container">
+                        <input type="search" class="srch" placeholder="Search for products or services..."/>
+                        <button type="submit" class="srch-btn"><span class="material-symbols-outlined">search</span></button>
+                    </div>
+
+                    <div class="table-container">
                         <table id="myTable">
                             <thead>
                                 <tr>
@@ -209,158 +206,86 @@
                         </table>
                     </div>
                 </div>
-                <!-- End of marketplace -->
+                <!-- End of Market Section -->
 
-                <!-- Vendor -->
-                <div class="vendor content">
-                    <div class="sub-title">
-                        <h1 class="title">Vendor</h1>
+
+                <div class="withdraw">
+                    <div class="title">
+                        <h1 class="edit">Withdrawal Section</h1>
                     </div>
+
                     <div class="page-404">
                         <h1>404</h1>
-                        <p>Nothing For You</p>
-                        <h2>I Still Dey Cook! &#128527;</h2>
+                        <h3>Nothing For you &#129298;</h3>
+                        <p>I still dey cook!</p>
                     </div>
                 </div>
-                <!-- End of vendor -->
+                <!-- End of Withdrawal Section --> 
 
-                <!-- Product Stats -->
-                <div class="product content">
-                    <div class="sub-title">
-                        <h1 class="title">Product Statistics</h1>
+
+                <div class="team">
+                    <div class="title">
+                        <h1 class="edit">Team Cycle</h1>
                     </div>
-                    <!-- Charts -->
-                    <div class="graphbox">
-                        <div class="box">
-                            <div class="box-title">My Products</div>
-                            <div class="chart">
-                                <canvas id="myChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-title">Promoted Products</div>
-                            <div class="chart">
-                                <canvas id="my-Chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="page-404">
-                        <h2>Still Cooking Boss! &#128527;</h2>
+                        <h1>404</h1>
+                        <h3>Nothing For you &#129298;</h3>
+                        <p>I still dey cook!</p>
                     </div>
                 </div>
-                <!-- End of product stats -->
-            </div>
+                <!-- End of Team Section -->
+
+
+                <div class="contest">
+                    <div class="title">
+                        <h1 class="edit">Contest</h1>
+                    </div>
+
+                    <div class="page-404">
+                        <h1>404</h1>
+                        <h3>Nothing For you &#129298;</h3>
+                        <p>I still dey cook!</p>
+                    </div>
+                </div>
+                <!-- End of contest Section -->
+
+
+                <div class="influence">
+                    <div class="title">
+                        <h1 class="edit">Influencer</h1>
+                    </div>
+
+                    <div class="page-404">
+                        <h1>404</h1>
+                        <h3>Nothing For you &#129298;</h3>
+                        <p>I still dey cook!</p>
+                    </div>
+                </div>
+                <!-- End of influencer Section -->
+
+                
+                <div class="plug">
+                    <div class="title">
+                        <h1 class="edit">Plug-In</h1>
+                    </div>
+
+                    <div class="page-404">
+                        <h1>404</h1>
+                        <h3>Nothing For you &#129298;</h3>
+                        <p>I still dey cook!</p>
+                    </div>
+                </div>
+                <!-- End of Plug-in Section -->
+            </main>
+
         </section>
-        <!-- End of Section-2 -->
+        <!------- END OF SECTION 2 ------->
     </div>
 
-
-    <!-- Javascript -->
-    <script src="js/app.js"></script>
-    <script src="js/market.js"></script>
+    <!-- Script -->
     <script src="js/nav.js"></script>
-    <script src="chart.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
-    <!-- Chart for my product -->
-    <script>
-        const data = {
-  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-  datasets: [{
-      label: 'Weekly Sales',
-      data: [18, 12, 6, 9, 12, 3, 9],
-      backgroundColor: [
-          'rgba(255, 26, 104, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(0, 0, 0, 0.2)'
-      ],
-      borderColor: [
-          'rgba(255, 26, 104, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(0, 0, 0, .1)'
-      ],
-      borderWidth: 1
-  }]
-};
-
-// config 
-const config = {
-  type: 'doughnut',
-  data,
-  options: {
-      scales: {
-          y: {
-              beginAtZero: true
-          }
-      }
-  }
-};
-
-// render init block
-const myChart = new Chart(
-  document.getElementById('myChart'),
-  config
-);
-
-// Chart for promoted product
-const dataa = {
-  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-  datasets: [{
-      label: ' Promoted Sales',
-      data: [18, 12, 6, 9, 12, 3, 9],
-      backgroundColor: [
-          'rgba(255, 26, 104, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(0, 0, 0, 0.2)'
-      ],
-      borderColor: [
-          'rgba(255, 26, 104, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(0, 0, 0, .1)'
-      ],
-      borderWidth: 1
-  }]
-};
-
-// config 
-const configg = {
-  type: 'bar',
-  dataa,
-  options: {
-      scales: {
-          y: {
-              beginAtZero: true
-          }
-      }
-  }
-};
-
-// render init block
-const my_Chart = new Chart(
-  document.getElementById('my-Chart'),
-  configg
-);
-    </script>
-    <script>
-        let time = document.querySelector(".time-payout");
-
-        time.textContent = Date();
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,94 @@
+:root {
+    --color-primary: #05ce81;
+    --color-secondary: #fefefe;
+    --color-background: #f6f6f9;
+    --color-text: #444;
+    --border-radius: 1.5rem;
+    --box-shadow: 0 0 25px rgba(0, 0, 0, .05);
+}
+
+
+/* table */
+.table-container {
+    margin-top: 30px;
+    overflow-x: scroll;
+    background-color: var(--color-secondary);
+    border-radius: .5rem;
+    min-height: 150px;
+    height: auto;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+/* .table-container::after{
+    content: "No Product Yet";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.table-container::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 2rem;
+}
+th{
+    border-radius: 1rem 1rem 0 0;
+}
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-background);
+    /* background-color: #fefefe; */
+}
+
+th {
+    font-weight: bold;
+    height: 80px;
+}
+
+th:first-child,
+td:first-child {
+    width: 40%;
+}
+
+.promote-btn {
+    padding: 6px 10px;
+    border: 1px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.promote-btn:hover{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+tr {
+    height: 70px;
+}
+
+
+@media screen and (max-width:786px) {
+    .search-box {
+        height: 50px;
+        padding: 5px;
+    }
+
+    table {
+        width: 750px;
+    }
+}
