@@ -10,6 +10,7 @@
     <!-- SYTLESHEET -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/marketplace.css">
+    <link rel="stylesheet" href="css/withdraw.css">
     <!-- MATERIAL ICON -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
@@ -214,11 +215,51 @@
                         <h1 class="edit">Withdrawal Section</h1>
                     </div>
 
-                    <div class="page-404">
+                    <!-- <div class="page-404">
                         <h1>404</h1>
                         <h3>Nothing For you &#129298;</h3>
                         <p>I still dey cook!</p>
+                    </div> -->
+
+                    <div class="boxes">
+                        <div class="box">
+                            <h3><span class="material-symbols-outlined">account_balance_wallet</span> <label>Current Balance</label></h3>
+                            <strong class="earning">$2550</strong>
+                        </div>
+                        <div class="box">
+                            <h3><span class="material-symbols-outlined">detector_status</span> <label>Eligibility Status</label></h3>
+                            <strong class="status">Active</strong>
+                        </div>
+
+                        <select class="bankFintechSelect">
+                            <optgroup label="Select a category">
+                                <option value="" disabled>Select a bank or fintech</option>
+                            </optgroup>
+                            <optgroup label="Banks">
+                                <option value="Bank of America">Bank of America</option>
+                                <option value="JP Morgan Chase">JP Morgan Chase</option>
+                                <option value="Wells Fargo">Wells Fargo</option>
+                                <!-- Add more bank options here -->
+                            </optgroup>
+                            <optgroup label="Fintech">
+                                <option value="Robinhood">Robinhood</option>
+                                <option value="Revolut">Revolut</option>
+                                <option value="PayPal">PayPal</option>
+                                <!-- Add more fintech options here -->
+                            </optgroup>
+                        </select>
+
+                        <input type="number" class="withdraw-amount-input" placeholder="Enter Amount">
                     </div>
+
+                    <div class="middle">
+                        <button class="cashout-btn">Cash Out</button>
+                        <a class="highlight" href="#">Transaction Details &raquo;</a>
+                    </div>
+
+                    <!-- <div class="boxes">
+                        
+                    </div> -->
                 </div>
                 <!-- End of Withdrawal Section --> 
 

@@ -340,6 +340,14 @@ main>div {
     color: var(--color-secondary);
 }
 
+/* Withdrawal section */
+.status{
+    border-radius: 50px;
+    text-align: center;
+    font-size: 10px;
+    border: 1px dashed var(--color-primary);
+}
+
 
 /* Page 404 */
 .page-404{
@@ -407,7 +415,10 @@ main>div {
     }
 
     .boxes .box strong {
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .boxes .box{
+        padding: 1.5rem;
     }
 
     header {

@@ -48,7 +48,7 @@ if (currentHour < 12) {
   talk = "Hello Boss, ready to generate Sales Today? Let’s go!";
 } else if (currentHour < 18) {
   greeting = "Good afternoon";
-  talk = "Hey boss! How is your going day so far?";
+  talk = "Hey boss! How is your day going so far?";
 } else {
   greeting = "Good evening";
   talk = "Hi there boss, You did good!";

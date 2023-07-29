@@ -12,8 +12,8 @@
 .table-container {
     margin-top: 30px;
     overflow-x: scroll;
-    background-color: var(--color-secondary);
-    border-radius: .5rem;
+    /* background-color: var(--color-secondary); */
+    border-radius: .1rem;
     min-height: 150px;
     height: auto;
     box-shadow: var(--box-shadow);
