@@ -7,39 +7,71 @@
     --box-shadow: 0 0 25px rgba(0, 0, 0, .05);
 }
 
-.bankFintechSelect, .withdraw-amount-input{
-    padding: .8rem;
-    border-radius: 1rem;
-    border: 0;
-    background-color: var(--color-secondary);
-    box-shadow: var(--box-shadow);
-}
-.middle{
-    margin-top: 30px;
-    /* text-align: center!important; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.cashout-btn{
-    cursor: pointer;
-    height: 50px;
-    width: 180px;
-    border: 0;
-    font-weight: bold;
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-    border-radius: 1rem;
-}
-.highlight{
-    color: var(--color-primary);
-    text-decoration: underline;
+.withdraw-container{
+    margin-top: 20px;
 }
 
-@media screen and (max-width:786px) {
-    .middle{
-        flex-direction: column;
-        /* align-items: start; */
-        gap: 20px;
+.withdraw-container .wrapper{
+    background-color: red;
+    /* height: 350px; */
+    display: flex;
+    gap: 20px;
+}
+
+.withdraw-container .wrapper .wrap{
+    /* height: 350px; */
+    width: 50%;
+    background-color: blue;
+}
+
+.withdraw-form{
+    margin-top: 20px;
+}
+
+.withdraw-form form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+.withdraw-form form input{
+    width: 100%;
+    /* height: 45px; */
+    padding: .78rem ;
+    margin-top: 10px;
+    border: 0;
+    border-radius: .5rem;
+    background-color: var(--color-secondary);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .05);
+}
+
+.withdraw-form form button{
+    padding: .78rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cashout-btn{
+    border: none;
+    background-color: var(--color-primary);
+    color: #fefefe;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .05);
+}
+
+.cashout-btn:hover{
+    filter: brightness(90%);
+}
+
+.reset-btn{
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+@media screen and (max-width:522px){
+    .withdraw-form form{
+        grid-template-columns: 1fr;
     }
 }

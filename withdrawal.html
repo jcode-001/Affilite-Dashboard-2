@@ -113,7 +113,7 @@
                     <a href="#">
                         <div class="notification">
                             <span class="material-symbols-outlined notification-bell">notifications</span>
-                            <div class="notification-count">3</div>
+                            <div class="notification-count">0</div>
                         </div>
                     </a>
 
@@ -131,14 +131,40 @@
                         <h1 class="edit">withdrawal Section</h1>
                     </div>
 
-                    <div class="page-error">
-                        <h1>404</h1>
-                        <h3>Oops! chief... &#129301;</h3>
-                        <p>Page never ready. Developer still dey cook.</p><br>
-                        <a href="index.html"><button class="btn back-btn">Go Back To Dashboard</button></a>
+                    <div class="withdraw-container">
+                        <div class="boxes">
+                            <div class="box">
+                                <h3><span class="material-symbols-outlined">account_balance_wallet</span>
+                                    <label>Current Balance</label>
+                                </h3>
+                                <strong class="earning">$752</strong>
+                            </div>
+                            <div class="box">
+                                <h3><span class="material-symbols-outlined">detector_status</span>
+                                    <label>Eligibility Status</label>
+                                </h3>
+                                <strong class="eligibility-status">Nill</strong>
+                            </div>
+                        </div>
+
+                        <div class="withdraw-form">
+                            <form action="" method="post">
+                                <!--                                <input type="hidden" name="_token" value="<KEY>" />-->
+                                <div class="input-control">
+                                    <label for="q_id">Quaapay ID:</label>
+                                    <input type="text" name="q_id" id="q_id">
+                                </div>
+                                <div class="input-control">
+                                    <label for="amount">Amount:</label>
+                                    <input type="text" name="amount" id="amount" value="$0">
+                                </div>
+
+                                <button type="submit" name="submit" class="cashout-btn">Cashout</button>
+                                <button type="reset" class="reset-btn">Clear Form</button>
+                            </form>
+                        </div>
                     </div>
 
-                    
                 </div>
                 <!-- End of Market Section -->
             </div>
