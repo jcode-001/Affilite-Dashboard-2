@@ -1,0 +1,15 @@
+:root {
+  --color-primary: #05ce81;
+  --color-secondary: #fefefe;
+  --color-background: #f6f6f9;
+  --color-text: #444;
+  --border-radius: 1.5rem;
+  --box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.dark-theme {
+  --color-primary: #05ce81;
+  --color-secondary: #212121;
+  --color-background: #121212;
+  --color-text: #fefefe;
+}
