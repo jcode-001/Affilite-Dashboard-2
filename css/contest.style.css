@@ -1,44 +1,5 @@
 @import url("root-colors.css");
-
-/* ------ SEARCH FIELD COMPONENT ------ */
-.search-container {
-  margin: 20px 0;
-  height: 50px;
-  width: 90%;
-  background-color: var(--color-secondary);
-  box-shadow: var(--box-shadow);
-  border-radius: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5px 10px 15px;
-}
-.srch {
-  width: 70%;
-  font-size: 17px;
-  text-transform: initial;
-  border: 0;
-  background-color: transparent;
-}
-.srch-btn {
-  height: 40px;
-  width: 40px;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--color-primary);
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
-.srch-btn:active {
-  filter: brightness(90%);
-}
-.srch-btn span {
-  font-size: 17px;
-  color: #fefefe;
-}
-/* ------ END OF SEARCH FIELD COMPONENT  ------ */
-
+@import url("search-box.styles.css"); /* styles for the search box*/
 /* ------ CONTEST TABLE STYLES ------ */
 
 .contest-table-box white-cl {
@@ -50,6 +11,7 @@
   border-radius: 12px;
   border-spacing: 0;
   max-width: 100%;
+  font-size: 14px;
   text-align: left;
 }
 
@@ -98,6 +60,11 @@ td {
 .view-contest-btn {
   text-align: center;
   cursor: pointer;
+}
+
+.active-status:hover,
+.view-contest-btn:hover {
+  opacity: 0.9;
 }
 
 .active-status > div {
