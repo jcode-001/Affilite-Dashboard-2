@@ -1,0 +1,115 @@
+@import url("root-colors.css");
+
+/* ------ SEARCH FIELD COMPONENT ------ */
+.search-container {
+  margin: 20px 0;
+  height: 50px;
+  width: 90%;
+  background-color: var(--color-secondary);
+  box-shadow: var(--box-shadow);
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px 10px 15px;
+}
+.srch {
+  width: 70%;
+  font-size: 17px;
+  text-transform: initial;
+  border: 0;
+  background-color: transparent;
+}
+.srch-btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.srch-btn:active {
+  filter: brightness(90%);
+}
+.srch-btn span {
+  font-size: 17px;
+  color: #fefefe;
+}
+/* ------ END OF SEARCH FIELD COMPONENT  ------ */
+
+/* ------ CONTEST TABLE STYLES ------ */
+
+.contest-table-box white-cl {
+  background-color: #fff;
+}
+
+.contest-table-box table {
+  border: 1px solid #bbb;
+  border-radius: 12px;
+  border-spacing: 0;
+  max-width: 100%;
+  text-align: left;
+}
+
+.contest-thead {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  padding: 20px 10px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.contest-thead {
+  border-radius: 10px;
+}
+
+.contest-thead > tr .left-radius {
+  border-top-left-radius: 10px;
+}
+.contest-thead > tr .right-radius {
+  border-top-right-radius: 10px;
+}
+
+.up-case {
+  text-transform: uppercase;
+}
+
+.white-cl {
+  background: var(--color-secondary);
+}
+
+tr {
+  padding: 30px;
+}
+
+th {
+  padding: 1rem;
+  color: var(--color-secondary);
+}
+
+td {
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid #bbb;
+}
+
+.active-status,
+.view-contest-btn {
+  text-align: center;
+  cursor: pointer;
+}
+
+.active-status > div {
+  background-color: #086541;
+  color: #fefefe;
+  border-radius: 1rem;
+  padding: 0.55rem;
+}
+
+.view-contest-btn > div {
+  padding: 0.55rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
