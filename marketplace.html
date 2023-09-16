@@ -1,241 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Affiliate Dashboard</title>
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon" />
     <!-- SYTLESHEET -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/marketplace.css">
-    <link rel="stylesheet" href="css/withdraw.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/marketplace.css" />
     <!-- MATERIAL ICON -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="main-container">
+      <div class="navbar">
+        <div class="nav-header">
+          <div class="brand">
+            <img src="img/logo.png" alt="Affilite_logo" />
+            <h2>Affilite</h2>
+          </div>
 
-        <div class="navbar">
-            <div class="nav-header">
-                <div class="brand">
-                    <img src="img/logo.png" alt="Affilite_logo">
-                    <h2>Affilite</h2>
-                </div>
-
-                <div class="close-btn">
-                    <span class="material-symbols-outlined menu-close">close</span>
-                </div>
-            </div>
-
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">
-                                <div class="page-link">
-                                    <span class="material-symbols-outlined">dashboard</span>
-                                    <b>Dashboard</b>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="current" href="marketplace.html">
-                                <div class="page-link">
-                                    <span class="material-symbols-outlined">storefront</span>
-                                    <b>Marketplace</b>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="withdrawal.html">
-                                <div class="page-link">
-                                    <span class="material-symbols-outlined">payments</span>
-                                    <b>Withdraw</b>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="team.html">
-                                <div class="page-link">
-                                    <span class="material-symbols-outlined">diversity_3</span>
-                                    <b>Team Cycle</b>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="contest.html">
-                                <div class="page-link">
-                                    <span class="material-symbols-outlined">group_work</span>
-                                    <b>Contest</b>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="influencer.html">
-                                <div class="page-link">
-                                    <span class="material-symbols-outlined">verified_user</span>
-                                    <b>Influencers</b>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="plugin.html">
-                                <div class="page-link">
-                                    <span class="material-symbols-outlined">extension</span>
-                                    <b>Plug-in</b>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <a href="#">
-                    <button class="logout-btn"><span class="material-symbols-outlined">logout</span><span
-                            class="logout-text">Logout</span></button>
-                </a>
-            </div>
+          <div class="close-btn">
+            <span class="material-symbols-outlined menu-close">close</span>
+          </div>
         </div>
 
-        <main>
-            <header>
-                <span class="material-symbols-outlined menu-open">side_navigation</span>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <b>Dashboard</b>
+                  </div>
+                </a>
+              </li>
 
-                <div class="profile-header">
-                    <a href="#">
-                        <div class="notification">
-                            <span class="material-symbols-outlined notification-bell">notifications</span>
-                            <div class="notification-count">0</div>
-                        </div>
-                    </a>
+              <li>
+                <a class="current" href="marketplace.html">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">storefront</span>
+                    <b>Marketplace</b>
+                  </div>
+                </a>
+              </li>
 
-                    <div class="user">
-                        <b>Gift Jackson</b><br>
-                        <small>Marketer</small>
-                    </div>
-                </div>
-            </header>
+              <li>
+                <a href="withdrawal.html">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">payments</span>
+                    <b>Withdraw</b>
+                  </div>
+                </a>
+              </li>
 
-            <!-- Page content -->
-            <div class="content">
-                <div class="market">
-                    <div class="title">
-                        <h1 class="edit">Marketplace</h1>
-                    </div>
+              <li>
+                <a href="team.html">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">diversity_3</span>
+                    <b>Team Cycle</b>
+                  </div>
+                </a>
+              </li>
 
+              <li>
+                <a href="contest.html">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">group_work</span>
+                    <b>Contest</b>
+                  </div>
+                </a>
+              </li>
 
-                    <div class="search-container">
-                        <input type="search" class="srch" placeholder="Search for products..." />
-                        <button type="submit" class="srch-btn"><span
-                                class="material-symbols-outlined">search</span></button>
-                    </div>
+              <li>
+                <a href="influencer.html">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">verified_user</span>
+                    <b>Influencers</b>
+                  </div>
+                </a>
+              </li>
 
-                    <div class="product-container search-result">
-                        <div class="product-box">
-                            <table>
-                                <tr>
-                                    <td><b>Products</b></td>
-                                    <td class="description product-name">affiliate marketing accelerator program</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Product Type</b></td>
-                                    <td class="description product-type">Digital</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Price ($)</b></td>
-                                    <td class="description price">$50</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Comm. (%)</b></td>
-                                    <td class="description commission">50%</td>
-                                </tr>
-                            </table>
-                            <button class="promote-btn btn">Promote</button>
-                        </div>
+              <li>
+                <a href="plugin.html">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">extension</span>
+                    <b>Plug-in</b>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-                        <div class="product-box">
-                            <table>
-                                <tr>
-                                    <td><b>Products</b></td>
-                                    <td class="description product-name">affiliate marketing accelerator program</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Product Type</b></td>
-                                    <td class="description product-type">Digital</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Price ($)</b></td>
-                                    <td class="description price">$50</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Comm. (%)</b></td>
-                                    <td class="description commission">50%</td>
-                                </tr>
-                            </table>
-                            <button class="promote-btn btn">Promote</button>
-                        </div>
+          <a href="#">
+            <button class="logout-btn">
+              <span class="material-symbols-outlined">logout</span
+              ><span class="logout-text">Logout</span>
+            </button>
+          </a>
+        </div>
+      </div>
 
-                        <div class="product-box">
-                            <table>
-                                <tr>
-                                    <td><b>Products</b></td>
-                                    <td class="description product-name">affiliate marketing accelerator program</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Product Type</b></td>
-                                    <td class="description product-type">Digital</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Price ($)</b></td>
-                                    <td class="description price">$50</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Comm. (%)</b></td>
-                                    <td class="description commission">50%</td>
-                                </tr>
-                            </table>
-                            <button class="promote-btn btn">Promote</button>
-                        </div>
+      <main>
+        <header>
+          <span class="material-symbols-outlined menu-open"
+            >side_navigation</span
+          >
 
-                        <div class="product-box">
-                            <table>
-                                <tr>
-                                    <td><b>Products</b></td>
-                                    <td class="description product-name">affiliate marketing accelerator program</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Product Type</b></td>
-                                    <td class="description product-type">Digital</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Price ($)</b></td>
-                                    <td class="description price">$50</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Comm. (%)</b></td>
-                                    <td class="description commission">50%</td>
-                                </tr>
-                            </table>
-                            <button class="promote-btn btn">Promote</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Market Section -->
+          <div class="profile-header">
+            <a href="#">
+              <div class="notification">
+                <span class="material-symbols-outlined notification-bell"
+                  >notifications</span
+                >
+                <div class="notification-count">0</div>
+              </div>
+            </a>
+
+            <div class="user">
+              <b>Gift Jackson</b><br />
+              <small>Marketer</small>
             </div>
-        </main>
+          </div>
+        </header>
+
+        <!-- Page content -->
+        <div class="content">
+          <div class="market">
+            <div class="title">
+              <h1 class="edit">Marketplace</h1>
+            </div>
+
+            <div class="search-container">
+              <input
+                type="search"
+                class="srch"
+                placeholder="Search for products..."
+              />
+              <button type="submit" class="srch-btn">
+                <span class="material-symbols-outlined">search</span>
+              </button>
+            </div>
+
+            <div class="product-container search-result">
+              <div class="product-box">
+                <table>
+                  <tr>
+                    <td><b>Products</b></td>
+                    <td class="description product-name">
+                      affiliate marketing accelerator program
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Product Type</b></td>
+                    <td class="description product-type">Digital</td>
+                  </tr>
+                  <tr>
+                    <td><b>Price ($)</b></td>
+                    <td class="description price">$50</td>
+                  </tr>
+                  <tr>
+                    <td><b>Comm. (%)</b></td>
+                    <td class="description commission">50%</td>
+                  </tr>
+                </table>
+                <button class="promote-btn btn">Promote</button>
+              </div>
+
+              <div class="product-box">
+                <table>
+                  <tr>
+                    <td><b>Products</b></td>
+                    <td class="description product-name">
+                      affiliate marketing accelerator program
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Product Type</b></td>
+                    <td class="description product-type">Digital</td>
+                  </tr>
+                  <tr>
+                    <td><b>Price ($)</b></td>
+                    <td class="description price">$50</td>
+                  </tr>
+                  <tr>
+                    <td><b>Comm. (%)</b></td>
+                    <td class="description commission">50%</td>
+                  </tr>
+                </table>
+                <button class="promote-btn btn">Promote</button>
+              </div>
+
+              <div class="product-box">
+                <table>
+                  <tr>
+                    <td><b>Products</b></td>
+                    <td class="description product-name">
+                      affiliate marketing accelerator program
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Product Type</b></td>
+                    <td class="description product-type">Digital</td>
+                  </tr>
+                  <tr>
+                    <td><b>Price ($)</b></td>
+                    <td class="description price">$50</td>
+                  </tr>
+                  <tr>
+                    <td><b>Comm. (%)</b></td>
+                    <td class="description commission">50%</td>
+                  </tr>
+                </table>
+                <button class="promote-btn btn">Promote</button>
+              </div>
+
+              <div class="product-box">
+                <table>
+                  <tr>
+                    <td><b>Products</b></td>
+                    <td class="description product-name">
+                      affiliate marketing accelerator program
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Product Type</b></td>
+                    <td class="description product-type">Digital</td>
+                  </tr>
+                  <tr>
+                    <td><b>Price ($)</b></td>
+                    <td class="description price">$50</td>
+                  </tr>
+                  <tr>
+                    <td><b>Comm. (%)</b></td>
+                    <td class="description commission">50%</td>
+                  </tr>
+                </table>
+                <button class="promote-btn btn">Promote</button>
+              </div>
+            </div>
+          </div>
+          <!-- End of Market Section -->
+        </div>
+      </main>
     </div>
 
     <!-- Javascript -->
     <script src="js/script.js"></script>
     <script src="js/theme.js"></script>
-</body>
-
+  </body>
 </html>
