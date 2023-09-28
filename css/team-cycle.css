@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("root-colors.css");
+
+.team-img {
+  /* border: 3px solid #fff; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  height: 21rem;
+}
+
+.team-img > img {
+  height: 100%;
+}
+
+.img-text,
+.img-text > p {
+  margin-top: 10px;
+}
+
+.img-text > p {
+  font-size: 0.89rem;
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+.color-primary a {
+  cursor: pointer;
+}
